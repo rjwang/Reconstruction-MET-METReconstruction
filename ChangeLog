@@ -1,0 +1,1457 @@
+2016-09-14 Teng Jian Khoo <khoo@cern.ch>
+	M       share/RunMETAssocTest.py
+	M       Root/METJetAssocTool.cxx
+	M       Root/METTauAssociator.cxx
+	M       Root/METPhotonAssociator.cxx
+	M       Root/METElectronAssociator.cxx
+	M       Root/METMuonAssociator.cxx
+	* Further PFlow MET fixes and diagnostics
+	* Tagged as METReconstruction-00-03-16
+
+2016-08-24 Teng Jian Khoo <khoo@cern.ch>
+	M       Root/METJetAssocTool.cxx
+	M       Root/METTauAssociator.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METPhotonAssociator.cxx
+	M       Root/METElectronAssociator.cxx
+	M       Root/METSoftAssociator.cxx
+	M       Root/METMuonAssociator.cxx
+	A       src/METAssocTestAlg.cxx
+	M       src/components/METReconstruction_entries.cxx
+	A       src/METAssocTestAlg.h
+	* Bugfix weighted cPFO summation
+	* Add a MET association map diagnostic alg
+	* Tagged as METReconstruction-00-03-15
+
+2016-08-04 Teng Jian Khoo <khoo@cern.ch>
+	M	METReconstruction/METAssociator.h
+	M	Root/METAssociator.cxx
+	M	Root/METElectronAssociator.cxx
+	M	Root/METMuonAssociator.cxx
+	M	Root/METPhotonAssociator.cxx
+	M	Root/METTauAssociator.cxx
+	M	python/METAssocConfig.py
+	* Implement weighted cPFO summation
+	* Tagged as METReconstruction-00-03-14
+
+2016-08-01 Teng Jian Khoo <khoo@cern.ch>
+	M       python/METAssocConfig.py
+	* Remove r19 naming scheme
+	* Setup for soft constituent links
+	* Tweaks to selection tool initialisation
+	M       python/METRecoConfig.py
+	* Tweaks to selection tool initialisation
+	M       Root/METAssociationTool.cxx
+	M       Root/METRecoTool.cxx
+	M       METReconstruction/METAssociationTool.h
+	* Timing info
+	M       share/RunMETReco_Associator.py
+	* Testing code
+	* Tagged as METReconstruction-00-03-13
+
+2016-07-26 Masahiko Saito <masahiko.saito@cern.ch>
+	M	CMakeLists.txt
+	M	METReconstruction/METAssociator.h
+	M	METReconstruction/METMuonAssociator.h
+	M	METReconstruction/METTrackFilterTool.h
+	M	Root/METAssociator.cxx
+	M	Root/METMuonAssociator.cxx
+	M	Root/METTrackFilterTool.cxx
+	M	python/METAssocConfig.py
+	A	python/METAssocConfig_readAOD.py
+	A	share/RunMETReco_Associator_AOD.py
+	* Merging in from devbranches/METReconstruction-trackcleaning
+	* Tagged as METReconstruction-00-03-12
+
+2016-06-14 Matt Klein <matthew.henry.klein@cern.ch>
+        M       Root/METJetAssocTool.cxx
+        * Fixed bug where track cleaning wasn't run on jet tracks
+
+2016-05-31 Teng Jian Khoo <khoo@cern.ch>
+	M       python/METConfig_Associator.py
+	M       python/METConfig_Calo.py
+	M       python/METAssocConfig.py
+	M       python/METRecoConfig.py
+	M       share/RunMETReco_Associator.py
+	M       Root/METBuilderTool.cxx
+	M       Root/METTauTool.cxx
+	M       Root/METSoftAssociator.cxx
+	M       Root/METAssociator.cxx
+	M       METReconstruction/METSoftAssociator.h
+	M       METReconstruction/METAssociator.h
+	M       METReconstruction/METBuilderTool.h
+	* Adapting to use origin-corrected clusters
+	* Tagged METReconstruction-00-03-10
+
+2016-05-20 AS Mete <amete@cern.ch>
+	M       Root/METAssociator.cxx
+	* Fix typo in logic that builds goodtracks when needed
+	* Tagged METReconstruction-00-03-09
+
+2016-05-17 AS Mete <amete@cern.ch>
+	U    Root/METTauAssociator.cxx
+	U    Root/METTauTool.cxx
+	* Switching to Rel 21 Tau EDM
+	* Tagged METReconstruction-00-03-08
+
+2016-05-14 Teng Jian Khoo <khoo@cern.ch>
+	M       python/METRecoConfig.py
+	* Fix TruthRegions config
+	* Tagged METReconstruction-00-03-07
+
+2016-05-10 Teng Jian Khoo <khoo@cern.ch>
+	M       python/METConfig_Associator.py
+	* Correct PFlow MET map toggle
+	* Tagged METReconstruction-00-03-06
+
+2016-05-08 Teng Jian Khoo <khoo@cern.ch>
+	M       python/METRecoFlags.py
+	M       python/METConfig_Track.py
+	M       python/METConfig_Associator.py
+	M       python/METAssocConfig.py
+	M       python/METRecoConfig.py
+	M       share/RunMETReco_Associator.py
+	M       share/METReconstruction_jobOptions.py
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METElectronTool.cxx
+	M       Root/METJetAssocTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METEgammaAssociator.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METTauAssociator.cxx
+	M       Root/METMuonElossTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METBuilderTool.cxx
+	M       Root/METEgammaTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METJetFilterTool.cxx
+	M       Root/METTauTool.cxx
+	M       Root/METRefinerTool.cxx
+	M       Root/METTruthAssociator.cxx
+	M       Root/METPhotonAssociator.cxx
+	M       Root/METElectronAssociator.cxx
+	M       Root/METCaloRegionsTool.cxx
+	M       Root/METSoftAssociator.cxx
+	M       Root/METRegionsTool.cxx
+	M       Root/METTruthTool.cxx
+	M       Root/METPhotonTool.cxx
+	M       Root/METMuonAssociator.cxx
+	M       Root/METAssociator.cxx
+	M       METReconstruction/METAssociator.h
+	* Fixing up PV warnings
+	* Tagged METReconstruction-00-03-05
+
+2016-04-25 Matt Klein <matthew.henry.klein@cern.ch>
+	M	Root/METAssociator.cxx
+	M	Root/METJetAssocTool.cxx
+	M	METReconstruction/METAssociator.h
+	M	METReconstruction/METJetAssocTool.h
+	A	share/RunMETReco_Towers.py
+	* Added tower configuration
+	* Tagged METReconstruction-00-03-04
+
+2016-04-24 Teng Jian Khoo <khoo@cern.ch>
+	M       CMakeLists.txt
+	* Remove more link libraries
+	* Tagged METReconstruction-00-03-03
+
+2016-04-22 Teng Jian Khoo <khoo@cern.ch>
+	M       CMakeLists.txt
+	* Don't try to link component library
+	* Tagged METReconstruction-00-03-02
+
+2016-04-20 Teng Jian Khoo <khoo@cern.ch>
+	M       CMakeLists.txt
+	* Sorting out some CMake fixes
+	M       Root/METTauAssociator.cxx
+	* Clang compilation warning
+	* Tagged METReconstruction-00-03-01
+
+2016-04-20 Teng Jian Khoo <khoo@cern.ch>
+	M       cmt/requirements
+	M       METReconstruction/METReconstructionDict.h
+	M       METReconstruction/METEgammaAssociator.h
+	M       CMakeLists.txt
+	A       METReconstruction/selection-athena.xml
+	A       METReconstruction/METRecoCommon.h
+	A       METReconstruction/METReconstructionAthDict.h
+	* Reorganising dictionary generation and library setup
+	* Tagged METReconstruction-00-02-08
+	M       Root/METEgammaAssociator.cxx
+	M       Root/METMuonAssociator.cxx
+	* Updated topocluster link name
+	* Tagged METReconstruction-00-03-00
+
+2016-04-18 AS Mete <amete@cern.ch>
+	M       python/METAssocConfig.py
+	M       python/METRecoConfig.py
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METAssociator.cxx
+	M       METReconstruction/METAssociator.h
+	M       METReconstruction/METTrackFilterTool.h
+	* Give a handle for switching isolation tools on/off
+	M       cmt/requirements
+	M       CMakeLists.txt
+	* Add reflex for met.DeltaR, only touched CMakeLists
+	M       Root/METTauAssociator.cxx
+	M       Root/METTauTool.cxx
+	* Testing new Tau EDM
+
+2016-04-18 Teng Jian Khoo <khoo@cern.ch>
+	M       python/METConfig_Truth.py
+	* Disable unintended truth map building
+	M       python/METAssocConfig.py
+	M       share/METReconstruction_jobOptions.py
+	M       Root/METRegionsTool.cxx
+	M       cmt/requirements
+	M       METReconstruction/METReconstructionDict.h
+	M       METReconstruction/selection.xml
+	* Set up configuration enums
+	M       Root/METMuonAssociator.cxx
+	M       METReconstruction/METMuonAssociator.h
+	* Implement topocluster links & matching for Eloss
+	M       Root/METEgammaAssociator.cxx
+	M       METReconstruction/METEgammaAssociator.h
+	* Implement topocluster links
+	M       share/RunMETReco_Associator.py
+	* Testing code for muon/egamma cluster matching
+
+2016-03-21 Matt Klein <matthew.henry.klein@cern.ch>
+	M       python/METAssocConfig.py
+	M       python/METRecoFlags.py
+	M	Root/METAssociator.cxx
+	M	Root/METAssociationTool.cxx
+	* Allowed for overwriting association map and core term
+
+2016-03-21 AS Mete <amete@cern.ch>
+	M       python/METAssocConfig.py
+	M       python/METRecoConfig.py
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METAssociator.cxx
+	M       METReconstruction/METAssociator.h
+	M       Root/METTauAssociator.cxx
+	* Switching from home cooked isolation to official tools
+	* Currently in testing mode
+	* Also add new Tau cluster EDM to METTauAssociator.cxx
+	* This is not converged yet so it's commented out
+
+2016-03-18 AS Mete <amete@cern.ch>
+	M       Root/METRegionsTool.cxx
+	* Bug fix (fix inconsistent check between MET term and MET map)
+
+2016-03-14 Matt Klein <matthew.henry.klein@cern.ch>
+	M       python/METRecoFlags.py
+	M       python/METAssocConfig.py
+	M       Root/METSoftAssociator.cxx
+	M       METReconstruction/METSoftAssociator.h
+	* Decorate core MET with soft term constituents (ported branch)
+
+2016-03-08 TJ Khoo <khoo@cern.ch>
+	M	Root/METTrackFilterTool.cxx
+	* Prevent crash due to no PV in debug message
+
+2016-03-07 Matt Klein <matthew.henry.klein@cern.ch>
+	* Fixed RootCore/Athena compilation bugs and tower bug
+
+2016-03-04 AS Mete <amete@cern.ch>
+	M       python/METRecoConfig.py
+	M       Root/METTrackFilterTool.cxx
+	M       cmt/requirements
+	M       METReconstruction/METTrackFilterTool.h
+	M       ChangeLog
+	* Switching from home cooked isolation to official tools
+	* Currently in testing mode
+
+2016-02-04 Matt Klein <matthew.henry.klein@cern.ch>
+	M	Root/*
+	M	METReconstruction/*
+	*	TLV::DeltaR->xAOD::P4Helpers::deltaR,etc.
+	*	Generalized CaloClusterContainer->IParticleContainer
+	*	for certain studies/checks/features/noReason
+2016-01-20 Matt Klein <matthew.henry.klein@cern.ch>
+	M	Root/METAssociator.cxx
+	M	Root/METAssociationTool.cxx
+	* Changed no PV warnings to debug messages
+	* Tagged METReconstruction-00-02-07
+
+2016-01-12 TJ Khoo <khoo@cern.ch>
+	M       python/METAssocConfig.py
+	* Add support for changing ID track sel tool
+	* Tagged METReconstruction-00-02-06
+
+2015-11-25 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_Track.py
+	M       Root/METTrackFilterTool.cxx
+	* Fixes for empty pileup PVTrack_vx* terms due to filling wrong term
+	* Reenable TrackFilter E/P cuts
+	* Tagged METReconstruction-00-02-04
+	M       python/METConfig_Track.py
+	* Typo
+	* Tagged METReconstruction-00-02-05
+
+2015-11-25 TJ Khoo <khoo@cern.ch>
+	M       Root/METTrackFilterTool.cxx
+	M       METReconstruction/METTrackFilterTool.h
+	* Fixes for empty PVTrack_vx* terms due to using wrong weights
+	* Correct TrackFilter E/P cuts
+	* Tagged METReconstruction-00-02-03
+
+2015-10-02 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_Calo.py
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	* Python fixes
+	* Tagged METReconstruction-00-02-02
+
+2015-10-01 TJ Khoo <khoo@cern.ch>
+	M       python/METRecoConfig.py
+	M       Root/METCaloRegionsTool.cxx
+	M       cmt/requirements
+	M       METReconstruction/METCaloRegionsTool.h
+	* Tagged METReconstruction-00-02-01
+	M       Root/METCaloRegionsTool.cxx
+	* Use CaloNoiseToolDefault instance to avoid crashing on data
+
+2015-10-01 Matt Klein <maklein@cern.ch>
+	M       util/example_METAssoc.cxx
+	*	Added feature
+
+2015-09-24 AS Mete <amete@cern.ch>
+	M       Root/METCaloRegionsTool.cxx
+	M       cmt/requirements
+	M       METReconstruction/METCaloRegionsTool.h
+	* Implementing T0 MET reconstruction a la trigger
+
+2015-09-22 TJ Khoo <khoo@cern.ch>
+	M       python/METAssocConfig.py
+	M       share/RunMETReco_TruthAssoc.py
+	M       Root/METTruthAssociator.cxx
+	M       Root/METTruthTool.cxx
+	* Fixing Truth Association Map building -- first "validated" version
+	* Change muon eta cutoff to end of MS and add out-of-acceptance muons to IntOut
+	M       METReconstruction/METSoftTermsTool.h
+	M       METReconstruction/METJetFilterTool.h
+	M       METReconstruction/METRecoTool.h
+	M       METReconstruction/METTauTool.h
+	M       METReconstruction/METTruthAssociator.h
+	M       METReconstruction/METPhotonAssociator.h
+	M       METReconstruction/METElectronAssociator.h
+	M       METReconstruction/METCaloRegionsTool.h
+	M       METReconstruction/METSoftAssociator.h
+	M       METReconstruction/METTruthTool.h
+	M       METReconstruction/METRegionsTool.h
+	M       METReconstruction/METPhotonTool.h
+	M       METReconstruction/METMuonAssociator.h
+	M       METReconstruction/METTrackFilterTool.h
+	M       METReconstruction/METJetAssocTool.h
+	M       METReconstruction/METElectronTool.h
+	M       METReconstruction/METAssociationTool.h
+	M       METReconstruction/METMuonTool.h
+	M       METReconstruction/METJetTool.h
+	M       METReconstruction/METTauAssociator.h
+	M       METReconstruction/METMuonElossTool.h
+	* Removing virtual inheritance where not needed
+	* Tagged METReconstruction-00-02-00
+
+2015-09-09 TJ Khoo <khoo@cern.ch>
+	M       python/METAssocConfig.py
+	M       share/RunMETReco_TruthAssoc.py
+	M       Root/METPhotonAssociator.cxx
+	M       Root/METSoftAssociator.cxx
+	M       Root/METAssociator.cxx
+	* EM and LC soft cluster core and other const signal scale consistency
+	* EoverP fixes
+
+2015-09-03 TJ Khoo <khoo@cern.ch>
+	M       share/RunMETReco_TruthAssoc.py
+	M       Root/METTruthAssociator.cxx
+	* Configuration updates
+	* Differentiation of truth core soft source tags
+
+2015-08-27 TJ Khoo <khoo@cern.ch>
+	A         METReconstruction/METTruthAssociator.h
+	A         Root/METTruthAssociator.cxx
+	A         share/RunMETReco_TruthAssoc.py
+	M       python/METConfig_Truth.py
+	M       python/METConfig_Associator.py
+	M       python/METAssocConfig.py
+	M       share/METReconstruction_jobOptions.py
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	M       Root/METJetAssocTool.cxx
+	M       Root/METEgammaAssociator.cxx
+	M       Root/METTauAssociator.cxx
+	M       Root/METPhotonAssociator.cxx
+	M       Root/METElectronAssociator.cxx
+	M       Root/METTruthTool.cxx
+	M       Root/METMuonAssociator.cxx
+	M       Root/METAssociator.cxx
+	M       METReconstruction/METPhotonAssociator.h
+	M       METReconstruction/METSoftAssociator.h
+	M       METReconstruction/METElectronAssociator.h
+	M       METReconstruction/METTruthTool.h
+	M       METReconstruction/METMuonAssociator.h
+	M       METReconstruction/METAssociator.h
+	M       METReconstruction/METJetAssocTool.h
+	M       METReconstruction/METEgammaAssociator.h
+	M       METReconstruction/METTauAssociator.h
+	M       src/components/METReconstruction_entries.cxx
+	* Truth associations
+	* Reinstate high pt track cuts for 20.7.X
+	* Making some methods constant
+	* Assuming some updates to TruthUtils
+
+2015-04-28 AS Mete <amete@cern.ch>
+	M       cmt/requirements
+	M       Root/METTruthTool.cxx
+	M       METReconstruction/METTruthTool.h
+	* Switch to TruthUtils. Currently have internal implementation for isStable
+
+2015-03-28 Matt Klein <maklein@cern.ch>
+	A       util/example_METAssoc.cxx
+	* Added example for configuring METAssoc reco in RootCore
+
+2015-03-23 AS Mete <amete@cern.ch>
+	M       Root/METPhotonTool.cxx
+	* Fixed logically dead code
+
+2015-02-10 AS Mete <amete@cern.ch>
+	M       python/METRecoConfig.py
+	M       Root/METRegionsTool.cxx
+	M       METReconstruction/METRegionsTool.h
+	* Update the implementation of flexible eta regions
+
+2015-02-03 AS Mete <amete@cern.ch>
+	M       python/METRecoConfig.py
+	M       Root/METRegionsTool.cxx
+	M       METReconstruction/METRegionsTool.h
+	* Add functionality to regions tool to setup arbirtary regions
+
+2015-01-27 TJ Khoo <khoo@cern.ch>
+	M       Root/METTrackFilterTool.cxx
+	* Protection for when muons/electrons are off
+	* Tagged METReconstruction-00-01-16
+
+2015-01-21 TJ Khoo <khoo@cern.ch>
+	* Correct r20 container names
+	* Tagged METReconstruction-00-01-15
+
+2015-01-20 TJ Khoo <khoo@cern.ch>
+	* Fixing memory leaks, multiple associations
+	* Tagged METReconstruction-00-01-14
+
+2015-01-13 TJ Khoo <khoo@cern.ch>
+	* Coverity and PFlow fixes
+	* Tagged METReconstruction-00-01-13
+
+2015-01-15 TJ Khoo <khoo@cern.ch>
+	D       src/METAssocAlg.cxx
+	M       src/components/METReconstruction_entries.cxx
+	D       src/METAssocAlg.h
+	* Remove testing code
+
+2015-01-12 TJ Khoo <khoo@cern.ch>
+	M       python/METRecoConfig.py
+	M       python/METAssocConfig.py
+	M       share/RunMETReco.py
+	M       Root/METEgammaAssociator.cxx
+	M       Root/METTauAssociator.cxx
+	M       Root/METPhotonAssociator.cxx
+	M       Root/METElectronAssociator.cxx
+	M       Root/METSoftAssociator.cxx
+	M       Root/METMuonAssociator.cxx
+	M       Root/METAssociator.cxx
+	M       METReconstruction/METPhotonAssociator.h
+	M       METReconstruction/METElectronAssociator.h
+	M       METReconstruction/METSoftAssociator.h
+	M       METReconstruction/METMuonAssociator.h
+	M       METReconstruction/METAssociator.h
+	M       METReconstruction/METJetAssocTool.h
+	M       METReconstruction/METEgammaAssociator.h
+	M       METReconstruction/METTauAssociator.h
+	M       src/components/METReconstruction_entries.cxx
+	* Merging in changes from METReconstruction-00-01-12-branch
+
+2015-01-09 TJ Khoo <khoo@cern.ch>
+	M       Root/METJetAssocTool.cxx
+	M       Root/METTauAssociator.cxx
+	M       Root/METPhotonAssociator.cxx
+	M       Root/METElectronAssociator.cxx
+	* Fixes for PFlow MET association, esp tracks
+
+2015-01-01 Matt Klein <matthew.henry.klein>
+	* Consistency with xAODMissingET-00-01-12-branch
+	* Created METReconstruction-00-01-12-branch
+
+2014-12-17 David Quarrie <David.Quarrie@cern.ch>
+	* cmt/requirements
+		Change to a dual_use library since a component library can't be linked against when using
+		cmake as the build engine and the lcgdict pattern fails. This pollutes the libraries for
+		any clients but is negated by the as-needed linkopts and is otherwise transparent.
+	* Tagged as METReconstruction-00-01-12
+
+2014-12-16 AS Mete <amete@cern.ch>
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METTruthTool.cxx
+	M       Root/METMuonElossTool.cxx
+	M       Root/METRegionsTool.cxx
+	M       src/METAssocAlg.cxx
+	M       Root/METEgammaTool.cxx
+	M       Root/METJetFilterTool.cxx
+	M       Root/METTauTool.cxx
+	* Coverity cleanup
+
+2014-12-12 TJ Khoo <khoo@cern.ch>
+	M        Root/METAssociator.cxx
+	M        Root/METPhotonAssociator.cxx
+	* Avoid warning in PFO container check, drop unnecessary photon track dR cut
+	* Tagging METReconstruction-00-01-11
+
+2014-12-12 TJ Khoo <khoo@cern.ch>
+	M       Root/METEgammaTool.cxx
+	* Cluster SG renaming
+	M       Root/METAssociator.cxx
+	M       METReconstruction/METAssociator.h
+	* Fix a memory leak from RetrievePFOTool
+	M       cmt/requirements
+	A       METReconstruction/selection.xml
+	A       METReconstruction/METReconstructionDict.h
+	* Adding dictionaries for pyROOT
+
+2014-12-05  Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	M       Root/METAssociator.cxx
+	M       python/METConfig_Track.py
+	* Tweak return codes to protect against missing PV
+	* Remove GaudiKernel.Constants include
+	* Tagging METReconstruction-00-01-10
+
+2014-12-04  Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	M       share/METReconstruction_jobOptions.py
+	* Fix configuration issue
+	* Tagging METReconstruction-00-01-09
+
+2014-12-03  Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	M       python/METConfig_Track.py
+	M       python/METConfig_RefFinal.py
+	* Correct some output names
+	* Tagging METReconstruction-00-01-08
+
+2014-12-03  Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	M       python/METRecoConfig.py
+	M       python/METAssocConfig.py
+	M       share/RunMETReco.py
+	* Use TightPrimary selection
+	* Tagging METReconstruction-00-01-07
+
+2014-12-03  Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	D       python/METRecoConfig_Associator.py
+	A       python/METConfig_Track.py
+	M       python/METConfig_Associator.py
+	D       python/METConfig_Assoc.py
+	M       python/METRecoConfig.py
+	A  +    python/METAssocConfig.py
+	* Configuration cleanup
+	M       share/METReconstruction_jobOptions.py
+	M       share/RunMETReco.py
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METAssociator.cxx
+	M       METReconstruction/METTrackFilterTool.h
+	* Incorporating TrackMET-by-vertex computation
+	* Tagging METReconstruction-00-01-06
+
+2014-11-28  Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	M       python/METRecoConfig_Associator.py
+	M       python/METConfig_RefFinal.py
+	M       share/METReconstruction_jobOptions.py
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METJetAssocTool.cxx
+	M       Root/METSoftAssociator.cxx
+	M       Root/METMuonAssociator.cxx
+	M       Root/METAssociator.cxx
+	M       METReconstruction/METAssociator.h
+	M       METReconstruction/METTrackFilterTool.h
+	* Configuration for Reco_tf
+	* Removing E/P selection and sorting out TrackSelectorTool
+	* Cleaning up use xAOD::blah statements
+	* Tagging METReconstruction-00-01-05
+
+2014-11-27 Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	M       python/METRecoFlags.py
+	M       python/METRecoConfig_Associator.py
+	M       python/METConfig_Associator.py
+	M       share/METReconstruction_jobOptions.py
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METJetAssocTool.cxx
+	M       Root/METAssociationTool.cxx
+	D       Root/METAssocBuilderTool.cxx
+	M       Root/METEgammaAssociator.cxx
+	M       Root/METTauAssociator.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METPhotonAssociator.cxx
+	M       Root/METElectronAssociator.cxx
+	M       Root/METSoftAssociator.cxx
+	M       Root/METMuonAssociator.cxx
+	A  +    Root/METAssociator.cxx
+	M       cmt/requirements
+	M       METReconstruction/METPhotonAssociator.h
+	M       METReconstruction/METElectronAssociator.h
+	M       METReconstruction/METSoftAssociator.h
+	M       METReconstruction/METMuonAssociator.h
+	A  +    METReconstruction/METAssociator.h
+	M       METReconstruction/METTrackFilterTool.h
+	M       METReconstruction/METJetAssocTool.h
+	M       METReconstruction/METAssociationTool.h
+	D       METReconstruction/METAssocBuilderTool.h
+	M       METReconstruction/METEgammaAssociator.h
+	M       METReconstruction/METTauAssociator.h
+	* Renaming AssocBuilderTool base class to Associator
+	* Putting in cluster signal states
+	* Python configuration cleanup
+
+2014-11-26 Matt Klein <matthew.henry.klein@cern.ch>
+	* Added in fixes from Bo Liu (use of common track selector tools)
+	* Clusters are passed around instead of stored
+	* For PFlow MET, jet tracks are no longer added to constituents
+
+2014-11-25 Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	M       share/RunMETReco_Associator.py
+	M       share/METReconstruction_jobOptions.py
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	M       Root/METJetAssocTool.cxx
+	M       Root/METAssociationTool.cxx
+	M       Root/METAssocBuilderTool.cxx
+	M       Root/METEgammaAssociator.cxx
+	M       Root/METTauAssociator.cxx
+	M       Root/METPhotonAssociator.cxx
+	M       Root/METElectronAssociator.cxx
+	M       Root/METSoftAssociator.cxx
+	M       Root/METMuonAssociator.cxx
+	M       METReconstruction/METPhotonAssociator.h
+	M       METReconstruction/METElectronAssociator.h
+	M       METReconstruction/METSoftAssociator.h
+	M       METReconstruction/METMuonAssociator.h
+	M       METReconstruction/METJetAssocTool.h
+	M       METReconstruction/METAssociationTool.h
+	M       METReconstruction/METAssocBuilderTool.h
+	M       METReconstruction/METEgammaAssociator.h
+	M       METReconstruction/METTauAssociator.h
+	M       src/METAssocAlg.cxx
+	A       python/METConfig_Calo.py
+	* Fix some warnings and bugs, disable METComponentMap-based MET_RefFinal etc
+	* Some restructuring of the associator tools
+	* Partially done revamping configuration for association map
+
+2014-11-19 Matt Klein <matthew.henry.klein@cern.ch>
+	* Restructured METAssociationMap reconstruction
+
+2014-11-17 Matt Klein <matthew.henry.klein@cern.ch>
+	* Added PFlow reconstruction to the trunk
+
+2014-10-30 Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	M         python/METConfig_RefFinal.py
+	M         Root/METJetFilterTool.cxx
+	* Protections for no PV in cosmics reconstruction
+	* Tagged as METReconstruction-00-01-04-01
+
+2014-10-30 Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	A         python/METConfig_Assoc.py
+	* Adding configuration for Reco_tf
+	* Tagged as METReconstruction-00-01-04
+
+2014-10-30 Teng Jian Khoo <Teng.Jian.Khoo@cern.ch>
+	M       python/METConfig_RefFinal.py
+	M       share/BuildAssociation.py
+	M       share/METReconstruction_jobOptions.py
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METEgammaTool.cxx
+	M       Root/METTauTool.cxx
+	M       Root/METCaloRegionsTool.cxx
+	M       cmt/requirements
+	M       METReconstruction/METCaloRegionsTool.h
+	M       src/METAssocAlg.cxx
+	M       src/METAssocAlg.h
+	* Validation and bugfixes making METAssociationMap and METComponentMap consistent
+	* Tagged as METReconstruction-00-01-03
+
+2014-10-09 AS Mete <amete@cern.ch>
+	* DUMMYBuilderTool.h => METAssocBuilderTool.h
+	* DUMMYJetTool.h     => METJetAssocTool.h
+
+2014-10-07 AS Mete <amete@cern.ch>
+	A         METReconstruction/DUMMYBuilderTool.h
+	A         METReconstruction/DUMMYJetTool.h
+	A         Root/DUMMYBuilderTool.cxx
+	A         Root/DUMMYJetTool.cxx
+	* Prototypes for migrations to new EDM
+
+2014-10-01 David Quarrie <David.Quarrie@cern.ch>
+	* cmt/requirements
+		Specify the private headerfile location for cmake (transparent to CMT).
+		Add the src directory to the headerfile locations for the private headerfiles.
+	* src/components/METReconstruction_entries.cxx
+		Replace "../src/MET*.h" by "MET*.h"
+	* Tagged as METReconstruction-00-01-02
+
+2014-09-30 TJ Khoo <khoo@cern.ch>
+	M       src/METAssocAlg.cxx
+	* Fixes for handling of muon tracks
+	* Tagged METReconstruction-00-01-01
+
+2014-09-30 TJ Khoo <khoo@cern.ch>
+	M       Root/METEgammaTool.cxx
+	M       METReconstruction/METBuilderTool.h
+	M       src/components/METReconstruction_entries.cxx
+	A       src/METAssocAlg.h
+	A       src/METAssocAlg.cxx
+	A       share/BuildAssociation.py
+	* Set up MET association building in a simple algorithm
+	* Tagged METReconstruction-00-01-00
+
+2014-08-27 TJ Khoo <khoo@cern.ch>
+	M       Root/METTrackFilterTool.cxx
+	* Fix d0 cut in track-vertex association
+	* Tagged METReconstruction-00-00-44
+
+2014-08-11 TJ Khoo <khoo@cern.ch>
+	M       Root/METTrackFilterTool.cxx
+	* Fix track-vertex association for z0 offset
+	* Tagged METReconstruction-00-00-43
+
+2014-08-08  scott snyder  <snyder@bnl.gov>
+
+	* Tagging METReconstruction-00-00-42.
+	* Root/METSoftTermsTool.cxx: Const fix.
+
+2014-08-07 TJ Khoo <khoo@cern.ch>
+	M       python/METRecoConfig.py
+	* Add duplicate warning toggle to METConfig in python
+	* Remove bug with incremented default arguments when providing custom config list for MET alg
+	* Tagged METReconstruction-00-00-41
+
+2014-08-05 TJ Khoo <khoo@cern.ch>
+	M       Root/METRecoTool.cxx
+	M       METReconstruction/METRecoTool.h
+	* Add property to toggle warning if MET is already in StoreGate
+	* Tagged METReconstruction-00-00-40
+
+2014-08-04 TJ Khoo <khoo@cern.ch>
+	M       python/METRecoConfig.py
+	* Get METRecoFlags earlier to avoid crash with custom config list
+	* Tagged METReconstruction-00-00-39
+
+2014-07-25 Serhan Mete <amete@cern.ch>
+	M cmt/requirements
+	M METReconstruction/METCaloRegionsTool.h
+	M Root/METCaloRegionsTool.cxx
+	M python/METConfig_CaloReg.py
+	M python/METRecoConfig.py
+	* Merge METReconstruction-00-00-37-branch back into trunk
+	* Enables cell-based calo regions reconstruction
+	* Tagged METReconstruction-00-00-38
+
+2014-07-24 TJ Khoo <khoo@cern.ch>
+	M       Root/METTauTool.cxx
+	* Modification to tau constituent matching
+
+2014-07-16 TJ Khoo <khoo@cern.ch>
+	M       Root/METCaloRegionsTool.cxx
+	* Protection against FPEs due to clusters with no energy in a sampling
+	* Tagged METReconstruction-00-00-37
+
+2014-07-14 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_CaloReg.py
+	M       Root/METRegionsTool.cxx
+	* Don't run regions tool on Calo container
+	* Additional protection against invalid METRegionsTool configuration
+	* Tagged METReconstruction-00-00-36
+
+2014-07-08 TJ Khoo <khoo@cern.ch>
+	A         python/METConfig_CaloReg.py
+	* Add calo regions configuration file
+	* Tagged METReconstruction-00-00-35
+
+2014-07-03 TJ Khoo <khoo@cern.ch>
+	M       Root/METEgammaTool.cxx
+	* Make egamma passSelection use bool again
+	* Tagged METReconstruction-00-00-34
+
+2014-07-01 TJ Khoo <khoo@cern.ch>
+	M       python/METRecoConfig.py
+	M       share/METReconstruction_jobOptions.py
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/RunMETReco.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	M       src/components/METReconstruction_entries.cxx
+	A       METReconstruction/METCaloRegionsTool.h
+	A       Root/METCaloRegionsTool.cxx
+	* Implement MET in calo regions/subdetectors
+
+2014-07-01 TJ Khoo <khoo@cern.ch>
+	M       Root/METBuilderTool.cxx
+	M       Root/METJetFilterTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METRefinerTool.cxx
+	M       Root/METRegionsTool.cxx
+	A       cmt/Makefile.RootCore
+	M       METReconstruction/METBuilderTool.h
+	M       METReconstruction/METRecoTool.h
+	M       METReconstruction/METRefinerTool.h
+	* Set up RootCore compilation
+	* Tagged METReconstruction-00-00-33
+
+2014-06-17 TJ Khoo <khoo@cern.ch>
+	M       Root/METEgammaTool.cxx
+	* Version of METReconstruction-00-00-32 with bool in egamma passSelection
+	* Tagged METReconstruction-00-00-32-01
+
+2014-06-12 TJ Khoo <khoo@cern.ch>
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	* Output region containers
+	M       python/METConfig_RefFinal.py
+	M       python/METRecoConfig.py
+	* Correct egamma selection
+	M       share/RunPFlowMET.py
+	M       share/RunMETReco.py
+	* Fix output names
+	M       Root/METMuonTool.cxx
+	M       Root/METEgammaTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METTauTool.cxx
+	* Fix object selections
+	* Tagged METReconstruction-00-00-32
+
+2014-06-02 TJ Khoo <khoo@cern.ch>
+	M       Root/METRecoTool.cxx
+	M       src/METRecoAlg.cxx
+	M       cmt/requirements
+	M       ChangeLog
+	M       src/METReaderAlg.cxx
+	* Remove unnecessary includes and dependencies
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	* Add region containers to default output lists
+
+2014-06-09 Tulay Cuhadar Donszelmann <tcuhadar@cern.ch>
+	* Root/METEgammaTool.cxx : Adapt the new egamma interface of
+	passSelection
+	* Tagged METReconstruction-00-00-31
+
+2014-05-27 TJ Khoo <khoo@cern.ch>
+        M       Root/METMuonTool.cxx
+        M       Root/METPhotonTool.cxx
+        * Pick up the photon tracks from the standard TrackParticle container instead of GSF
+        * Muon check for validity of ID track ElementLink
+        * Tagged METReconstruction-00-00-30
+
+2014-05-23 TJ Khoo <khoo@cern.ch>
+	M       python/METRecoConfig.py
+	* Correct photon configuration correctly
+	* Tagged METReconstruction-00-00-29
+
+2014-05-23 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_RefFinal.py
+	M       python/METRecoConfig.py
+	* Correct photon author selection in METPhotonTool configuration
+	* Tagged METReconstruction-00-00-28
+
+2014-05-16 TJ Khoo <khoo@cern.ch>
+	M       cmt/requirements
+	A  +    python/METConfig_PFlow.py
+	M       python/METRecoConfig.py
+	M       share/METReconstruction_jobOptions.py
+	A  +    share/RunPFlowMET.py
+	M       share/RunMETReco.py
+	* Merged in PFlow development branch 00-00-26-branch
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METElectronTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METJetFilterTool.cxx
+	M       Root/METTruthTool.cxx
+	M       Root/METRegionsTool.cxx
+	M       Root/METPhotonTool.cxx
+	M       METReconstruction/METSoftTermsTool.h
+	M       src/METReaderAlg.cxx
+	* Updates to addressvarious EDM changes and encapsulation
+	* METReader checks in SG for MET output
+	* Tagged METReconstruction-00-00-27
+
+2014-04-30 Walter Lampl <walter.lampl@ cern.ch>
+	* Use new CaloClusterChangeSignalState helper class
+	* tag METReconstruction-00-00-26
+
+2014-04-24 TJ Khoo <khoo@cern.ch>
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	* Correct output list configuration
+	* Tagged METReconstruction-00-00-25
+
+2014-04-24 TJ Khoo <khoo@cern.ch>
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	* Add default output for when MET reconstruction is not run
+	* Tagged METReconstruction-00-00-24
+
+2014-04-24 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_RefFinal.py
+	* Fix configuration with inner detector switched off
+	* Tagged METReconstruction-00-00-23
+
+2014-04-23 TJ Khoo <khoo@cern.ch>
+	* Tagged METReconstruction-00-00-22 w/o svn changes
+
+2014-04-17 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_RefFinal.py
+	M       python/METRecoConfig.py
+	* Fix configuration of cluster signal states
+	* Tagged METReconstruction-00-00-21
+
+2014-04-16 TJ Khoo <khoo@cern.ch>
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METMuonTool.cxx
+	* Update to TrackParticle::summaryValue interface
+	* Tagged METReconstruction-00-00-20
+
+2014-04-15 TJ Khoo <khoo@cern.ch>
+	M       python/METRecoFlags.py
+	M       python/METRecoConfig.py
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METRecoTool.cxx
+	M       cmt/requirements
+	M       METReconstruction/METRecoTool.h
+	* Add options for timing reconstruction tools
+	* Minor optimisation of track selection
+
+2014-04-10 TJ Khoo <khoo@cern.ch>
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METTauTool.cxx
+	* Ignore last change -- vectors of signal state helpers are more efficient
+	M       Root/METElectronTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METEgammaTool.cxx
+	M       Root/METTauTool.cxx
+	M       Root/METTruthTool.cxx
+	M       Root/METPhotonTool.cxx
+	* Reserve space for vectors in advance
+	* Tagged METReconstruction-00-00-19
+
+2014-04-09 TJ Khoo <khoo@cern.ch>
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METTauTool.cxx
+	M       cmt/requirements
+	* Use CaloUtils to set cluster signal states safely, restoring them at the end of the processing
+
+2014-04-08 TJ Khoo <khoo@cern.ch>
+	M	Root/METTruthTool.cxx
+	* Correct compilation error.
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METTruthTool.cxx
+	M       src/METRecoAlg.cxx
+	* Some optimisations when recording particles in the component map
+	* Tagging METReconstruction-00-00-18
+
+2014-04-07 TJ Khoo <khoo@cern.ch>
+	M       Root/METSoftTermsTool.cxx
+	M	Root/METTruthTool.cxx
+	* Ignore 0 energy clusters
+	* Ignore geantinos and truth particles with 0 pt
+	* Tagging METReconstruction-00-00-17
+
+2014-04-04 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_RefFinal.py
+	M       python/METRecoConfig.py
+	* Default doTracks to false, configurations for egamma PID
+	M       Root/METTruthTool.cxx
+	* Correct computation of NonInt
+	M       src/METReaderAlg.cxx
+	* Test computation of Truth regions
+
+2014-04-03 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_RefFinal.py
+	M       python/METConfig_Truth.py
+	M       python/METRecoConfig.py
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METJetFilterTool.cxx
+	M       Root/METRegionsTool.cxx
+	* Sorting out configuration bugs
+	* Simplify insertion into maps for refiners
+	* Tagging METReconstruction-00-00-16
+
+2014-04-02 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_Truth.py
+	M       python/METRecoConfig.py
+	M       share/RunMETReco.py
+	M       Root/METMuonTool.cxx
+	M       Root/METRegionsTool.cxx
+	M       Root/METTruthTool.cxx
+	M       METReconstruction/METRegionsTool.h
+	M       src/components/METReconstruction_entries.cxx
+	M       src/METReaderAlg.cxx
+	* Correction in MET_Truth configuration
+	* Setting up configuration for regions tool and some debugging
+
+2014-04-02 AS Mete <amete@cern.ch>
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METJetFilterTool.cxx
+	M       Root/METRegionsTool.cxx
+	* Switch to MET->add(const IParticle*)
+	* METRegionsTool.cxx: insert terms into MissingETComposition
+
+2014-04-01 AS Mete <amete@cern.ch>
+	M       Root/METRegionsTool.cxx
+	* Work on implementation
+
+2014-03-31 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_RefFinal.py
+	M       python/METRecoConfig.py
+	M       share/METReconstruction_jobOptions.py
+	M       share/RunMETReco.py
+	M       Root/METJetTool.cxx
+	M       Root/METJetFilterTool.cxx
+	M       Root/METMuonTool.cxx
+	M       METReconstruction/METRegionsTool.h
+	* Add DoTracks property to muon tool -- should never be used, but the variable needs initialisation.
+	* Check rec.doTruth() in topOptions to avoid warnings due to trying to run the truth tools on data
+	* Avoid build warning in regions tool
+	* Tagging METReconstruction-00-00-15
+
+2014-03-26 AS Mete <amete@cern.ch>
+	A       Root/METRegionsTool.cxx
+	A       METReconstruction/METRegionsTool.h
+	* Skeleton for METRegionsTool
+
+2014-03-22 TJ Khoo <khoo@cern.ch>
+	M       Root/METJetTool.cxx
+	* Match change of Jet EDM enum name
+	* Tagging METReconstruction-00-00-14
+
+2014-03-20 AS Mete <amete@cern.ch>
+	M       Root/METTauTool.cxx
+	M       Root/METJetTool.cxx
+	* Added functionality to apply pT cut on weighted tau jets
+	* Clean-up METJetTool.cxx
+
+2014-03-20 TJ Khoo <khoo@cern.ch>
+	M       python/METConfig_RefFinal.py
+	M       python/METRecoConfig.py
+	M       share/METReconstruction_jobOptions.py
+	M       share/RunMETReco.py
+	* Fixing configuration problems
+	M       Root/METTrackFilterTool.cxx
+	* Fix index bug in access to error of qoverp
+	M       Root/METJetTool.cxx
+	M       Root/METTauTool.cxx
+	* Tweaking weighted pt cut
+	* Fix logic when there are and are not overlaps for taus and jets
+	* Tagging METReconstruction-00-00-13
+
+2014-03-20 Serhan Mete <amete@cern.ch>
+	M       Root/METJetTool.cxx
+	* Added functionality to apply pT cut on weighted jets
+
+2014-03-19 TJ Khoo <khoo@cern.ch>
+	M       cmt/requirements
+	M       Root/METTrackFilterTool.cxx
+	M       METReconstruction/METTrackFilterTool.h
+	* Implement E/P and track momentum error cuts
+	M       python/METConfig_RefFinal.py
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METJetFilterTool.cxx
+	M       src/METReaderAlg.cxx
+	* Minor changes to JetFilter
+	* Fix bug in defaults for SoftClusters
+	* For now, sum over all "Refined" terms from builders.
+	* Tagging METReconstruction-00-00-12
+
+2014-03-18 TJ Khoo <khoo@cern.ch>
+	A       python/METRecoFlags.py
+	A       python/METConfig_RefFinal.py
+	A       python/METConfig_Truth.py
+	M       python/METRecoConfig.py
+	M       share/RunMETReco.py
+	M       share/METReconstruction_jobOptions.py
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	* Split up configuration further and make use of global flags
+	M       Root/METMuonTool.cxx
+	* Correct P, pt to be in GeV
+	M       Root/METTrackFilterTool.cxx
+	* Correct sign of d0 check
+	M       METReconstruction/METSoftTermsTool.h
+	M       Root/METSoftTermsTool.cxx
+	* Add selection for only -ve E clusters
+	M       Root/METRecoTool.cxx
+	M       src/METReaderAlg.cxx
+	* Minor adjustments
+
+2014-03-17 TJ Khoo <khoo@cern.ch>
+	M       Root/METJetTool.cxx
+	* Adapt to changes in jet EDM
+	* Remove pT cut -- JES will not be applied until later
+	M       Root/METTauTool.cxx
+	* Debug statements
+	M       share/METReconstructionOutputAODList_jobOptions.py
+	M       share/METReconstructionOutputESDList_jobOptions.py
+	* Write out the Truth container and map
+	* Tagging METReconstruction-00-00-11
+
+2014-03-15 TJ Khoo <khoo@cern.ch>
+	M       share/METReconstruction_jobOptions.py
+	M       share/RunMETReco.py
+	A       share/METReconstructionOutputAODList_jobOptions.py
+	A       share/METReconstructionOutputESDList_jobOptions.py
+	M       Root/METRecoTool.cxx
+	* Clean up example jobOptions and correct algSequence assignment
+	* Add output aod/esd lists for RexExCommon
+	* Correct a debug statement
+	* Tagging METReconstruction-00-00-10
+
+2014-03-14 TJ Khoo <khoo@cern.ch>
+	M       python/METRecoConfig.py
+	D       share/metRecoTopOptions.py
+	A       share/METReconstruction_jobOptions.py
+	A       share/RunMETReco.py
+	D       share/metReaderTopOptions.py
+	* TopOptions naming convention for RecExCommon
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METElectronTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METPhotonTool.cxx
+	M       Root/METTauTool.cxx
+	* Setting Status tags for MissingETComponents
+	M       cmt/requirements
+	* Public use for xAODJet
+	A       METReconstruction/METJetFilterTool.h
+	A       METReconstruction/METMuonElossTool.h
+	A       Root/METJetFilterTool.cxx
+	A       Root/METMuonElossTool.cxx
+	M       src/components/METReconstruction_entries.cxx
+	* Skeleton jet pileup correction and muon Eloss tools
+	M       src/METReaderAlg.cxx
+	* Renaming some terms
+	* Tagging METReconstruction-00-00-09
+
+2014-03-13 TJ Khoo <khoo@cern.ch>
+	D       python/metReco_config.py
+	A  +    python/METRecoConfig.py
+	M       share/metRecoTopOptions.py
+	* Rename configuration file -- needs some more work
+	M       Root/METRefinerTool.cxx
+	M       Root/METTrackFilterTool.cxx
+	M       Root/METElectronTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METBuilderTool.cxx
+	M       Root/METTruthTool.cxx
+	M       Root/METPhotonTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METTauTool.cxx
+	* Disable muon quality cuts for now -- muons are broken
+	M       METReconstruction/METTrackFilterTool.h
+	* Add PV selection to tracks
+	M       METReconstruction/METJetTool.h
+	* Beginning to migrate JVF cuts to a separate tool
+	* Tagging METReconstruction-00-00-08
+
+2014-03-12 TJ Khoo <khoo@cern.ch>
+	A  +    python/metReco_config.py
+	M       share/metRecoTopOptions.py
+	D       share/metReco_config.py
+	M       Root/METRecoTool.cxx
+	M       cmt/requirements
+	* Put configuration python in the right place to be called by external jobOptions
+	* Probably will be renamed and refined in future
+	M       src/components/METReconstruction_entries.cxx
+	M       src/METReaderAlg.cxx
+	A       Root/METTruthTool.cxx
+	A       METReconstruction/METTruthTool.h
+	* Add a tool to compute TruthMET
+	* Tagging METReconstruction-00-00-07
+
+2014-03-11 TJ Khoo <khoo@cern.ch>
+	M       share/metRecoTopOptions.py
+	M       share/metReco_config.py
+	A       Root/METBuilderTool.cxx
+	A       Root/METRefinerTool.cxx
+	D       Root/METToolBase.cxx
+	M       Root/METElectronTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METEgammaTool.cxx
+	M       Root/METPhotonTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METTauTool.cxx
+	A       METReconstruction/METBuilderTool.h
+	A       METReconstruction/METRefinerTool.h
+	M       METReconstruction/METSoftTermsTool.h
+	M       METReconstruction/METEgammaTool.h
+	M       METReconstruction/METRecoTool.h
+	M       METReconstruction/METTauTool.h
+	D       METReconstruction/METToolBase.h
+	M       METReconstruction/METMuonTool.h
+	M       METReconstruction/METJetTool.h
+	M       src/METRecoAlg.cxx
+	M       src/METReaderAlg.cxx
+	M       src/components/METReconstruction_entries.cxx
+	* Restructure inheritance: have builder and refiner tools to run reco and post-reco respectively
+	* Fix heinous bug with track iterators
+	* Put all feedback in METReaderAlg
+	* Implement TrackFilter tool
+	* Change to muon precision hits counter and electron original track matching
+	* Tagging METReconstruction-00-00-06
+
+2014-03-08 TJ Khoo <khoo@cern.ch>
+	M       Root/METMuonTool.cxx
+	M       METReconstruction/METMuonTool.h
+	* Flesh out muon tool. Just do selection and track matching.
+
+2014-03-07 TJ Khoo <khoo@cern.ch>
+	M       share/metRecoTopOptions.py
+	M       share/metReco_config.py
+	M       share/metReaderTopOptions.py
+	* Expand tool configurations to all tools, enable gamma tool
+	A       Root/METEgammaTool.cxx
+	M       METReconstruction/METElectronTool.h
+	M       METReconstruction/METPhotonTool.h
+	A       METReconstruction/METEgammaTool.h
+	M       Root/METElectronTool.cxx
+	M       Root/METPhotonTool.cxx
+	* Derive electron and photon tools from egamma tool, to share some common code
+	* Flesh out photon implementation, mostly as copy of electron tool
+	M       Root/METJetTool.cxx
+	M       Root/METTauTool.cxx
+	M       METReconstruction/METTauTool.h
+	M       METReconstruction/METJetTool.h
+	* Implement first go at tau tool, with PID options and matching clusters via seed jet
+	M       src/METRecoAlg.cxx
+	M       src/METReaderAlg.cxx
+	* Add more diagnostic information for AOD components and RefGamma
+	* Tagging METReconstruction-00-00-05
+
+2014-03-06 TJ Khoo <khoo@cern.ch>
+	M       share/metReco_config.py
+	M       Root/METElectronTool.cxx
+	M       Root/METJetTool.cxx
+	M       METReconstruction/METElectronTool.h
+	* Fix bug in electron tool [reference arguments], more debugging in jet tool
+	* Tagging METReconstruction-00-00-04
+
+2014-03-05 TJ Khoo <khoo@cern.ch>
+	M       cmt/requirements
+	M       share/metRecoTopOptions.py
+	M       share/metReco_config.py
+	M       Root/METToolBase.cxx
+	M       Root/METElectronTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       METReconstruction/METSoftTermsTool.h
+	M       METReconstruction/METElectronTool.h
+	M       METReconstruction/METJetTool.h
+	M       src/METRecoAlg.cxx
+	M       src/components/METReconstruction_entries.cxx
+	* Structure configuration in jobOptions
+	* Improve METElectronTool feedback, PID selection, electron-topocluster matching, correct default TC collection
+	* Code organisation and standardisation, basic signal object selection in METSoftTermsTool
+	* Use preferred treatment of jet constituents, signal state control
+	A       src/METReaderAlg.h
+	A       src/METReaderAlg.cxx
+	A       share/metReaderTopOptions.py
+	* Add test reader alg and top options
+	* Tagging METReconstruction-00-00-03
+
+2014-02-27 TJ Khoo <khoo@cern.ch>
+	M       share/metRecoTopOptions.py
+	M       share/metReco_config.py
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METRecoTool.cxx
+	M       src/METRecoAlg.cxx
+	* Fix jobOptions for tool configuration
+	* Add debug statements in SoftTermsTool, JetTool
+	* Reorganise and fix record calls for MET container and map
+	* Test retrieval from SG in RecoAlg and compare with AOD MissingET
+
+2014-02-26 TJ Khoo <khoo@cern.ch>
+	M       cmt/requirements
+	M       Root/METRecoTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       METReconstruction/METSoftTermsTool.h
+	M       METReconstruction/METPhotonTool.h
+	M       METReconstruction/METTauTool.h
+	M       METReconstruction/METToolBase.h
+	M       METReconstruction/METElectronTool.h
+	M       METReconstruction/METMuonTool.h
+	M       METReconstruction/METJetTool.h
+	M       src/components/METReconstruction_entries.cxx
+	* Fix entries, sort out factories, make METReconstructionConf work
+	A       src/METRecoAlg.h
+	A       src/METRecoAlg.cxx
+	A       share/metRecoTopOptions.py
+	A       share/metReco_config.py
+	* Set up first test algorithm and jobOptions
+
+2014-02-24 TJ Khoo <khoo@cern.ch>
+	M       cmt/requirements
+	M       Root/METToolBase.cxx
+	M       Root/METElectronTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METPhotonTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METTauTool.cxx
+	M       METReconstruction/METSoftTermsTool.h
+	M       METReconstruction/METPhotonTool.h
+	M       METReconstruction/METRecoTool.h
+	M       METReconstruction/METTauTool.h
+	M       METReconstruction/METToolBase.h
+	M       METReconstruction/METElectronTool.h
+	M       METReconstruction/METMuonTool.h
+	M       METReconstruction/METJetTool.h
+	* Update package to use xAODMissingET-00-00-08
+	* Tagging METReconstruction-00-00-02
+
+2014-02-24 Serhan Mete <amete@cern.ch>
+	* MissingETCompositionMap -> MissingETComponentMap in METSoftTermsTool
+
+2014-02-22 TJ Khoo <khoo@cern.ch>
+	M       cmt/requirements
+	M       Root/METToolBase.cxx
+	M       Root/METElectronTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METPhotonTool.cxx
+	M       Root/METTauTool.cxx
+	M       METReconstruction/METRecoTool.h
+	M       METReconstruction/METElectronTool.h
+	* Still fiddling with electron tool container storage
+	* First hints of Doxygen
+	* Namespace scoping in method arguments
+
+2014-02-22 Serhan Mete <amete@cern.ch>
+	* METSoftTermsTool: Restructure
+
+2014-02-19 TJ Khoo <khoo@cern.ch>
+	M    Root/METJetTool.cxx
+	M    Root/METElectronTool.cxx
+	M    METReconstruction/METElectronTool.h
+	* Fix return value for METJetTool resolveOverlaps
+	* Prototype cluster, track matching code and overlap removal for electron tool
+
+2014-02-19 Serhan Mete <amete@cern.ch>
+	M    ChangeLog
+	M    Root/METSoftTermsTool.cxx
+	* First test for METSoftTermsTool implementation
+
+2014-02-14 TJ Khoo <khoo@cern.ch>
+	M    METReconstruction/METElectronTool.h
+	M    METReconstruction/METJetTool.h
+	M    METReconstruction/METMuonTool.h
+	M    METReconstruction/METPhotonTool.h
+	M    METReconstruction/METRecoTool.h
+	M    METReconstruction/METSoftTermsTool.h
+	M    METReconstruction/METTauTool.h
+	M    METReconstruction/METToolBase.h
+	M    Root/METElectronTool.cxx
+	M    Root/METJetTool.cxx
+	M    Root/METMuonTool.cxx
+	M    Root/METPhotonTool.cxx
+	M    Root/METRecoTool.cxx
+	M    Root/METSoftTermsTool.cxx
+	M    Root/METTauTool.cxx
+	M    Root/METToolBase.cxx
+	* First version compiling against xAODMissingET-00-00-05
+	* Implement placeholder accept, resolveOverlaps, executeTool for Muon, Photon, SoftTerms and Tau Tools
+	* Sketch of Electron tool, needing implementations of cluster/track matching
+	* Functional? outline of Jet tool
+	* Possibly needs some solution for forward declarations of EDM classes
+	* Tagging METReconstruction-00-00-01
+
+2014-02-14 TJ Khoo <khoo@cern.ch>
+	M    METReconstruction/METRecoTool.h
+	M    Root/METToolBase.cxx
+	* Remove addMETFinal method -- done in parallel with the loop
+
+2014-01-29 TJ Khoo <khoo@cern.ch>
+	A    python
+	A    share
+	A    Root
+	A    cmt
+	A    cmt/requirements
+	A    doc
+	A    src
+	A    src/components
+	A    src/components/METReconstruction_entries.cxx
+	A    src/components/METReconstruction_load.cxx
+	A    METReconstruction
+	* Create package structure
+	A    Root/METRecoTool.cxx
+	A    METReconstruction/METRecoTool.h
+	* Add METRecoTool skeleton as AsgTool
+	A    Root/METToolBase.cxx
+	A    METReconstruction/METToolBase.h
+	* Add METToolBase skeleton as AsgTool
+
+2014-01-30 TJ Khoo <khoo@cern.ch>
+	M       METReconstruction/METToolBase.h
+	M       Root/METToolBase.cxx
+	M       Root/METRecoTool.cxx
+	* Correct METToolBase::execute() arguments
+	A       Root/METElectronTool.cxx
+	A       Root/METMuonTool.cxx
+	A       Root/METJetTool.cxx
+	A       Root/METSoftTermsTool.cxx
+	A       Root/METPhotonTool.cxx
+	A       Root/METTauTool.cxx
+	A       METReconstruction/METSoftTermsTool.h
+	A       METReconstruction/METPhotonTool.h
+	A       METReconstruction/METTauTool.h
+	A       METReconstruction/METElectronTool.h
+	A       METReconstruction/METMuonTool.h
+	A       METReconstruction/METJetTool.h
+	M       src/components/METReconstruction_entries.cxx
+	* Add skeletons for the various tools
+
+2014-02-03 TJ Khoo <khoo@cern.ch>
+	M       METReconstruction/METSoftTermsTool.h
+	M       METReconstruction/METPhotonTool.h
+	M       METReconstruction/METRecoTool.h
+	M       METReconstruction/METTauTool.h
+	M       METReconstruction/METToolBase.h
+	M       METReconstruction/METElectronTool.h
+	M       METReconstruction/METMuonTool.h
+	M       METReconstruction/METJetTool.h
+	M       Root/METToolBase.cxx
+	M       Root/METElectronTool.cxx
+	M       Root/METMuonTool.cxx
+	M       Root/METJetTool.cxx
+	M       Root/METSoftTermsTool.cxx
+	M       Root/METPhotonTool.cxx
+	M       Root/METRecoTool.cxx
+	M       Root/METTauTool.cxx
+	* Update tool interface
+	* First prototypes for execute, removeOverlaps, selection etc in METElectronTool and METJetTool

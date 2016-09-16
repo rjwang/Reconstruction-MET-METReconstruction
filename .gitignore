@@ -1,0 +1,4 @@
+# no emacs temp files
+# no tables files
+
+*/.svn
